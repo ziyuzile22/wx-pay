@@ -1,0 +1,50 @@
+开发者id(APPID):			wxfc9a296ef77b9b95
+商户id(MCHID)：			1524706301
+开发者秘钥(SECRET)：		d556a3f26acbd70499024921c7404243
+支付秘钥(KEY)：		   	b9840976e63916e233d1d380549514a3
+操作密码:  				zl4921272.
+
+'appid'      => 公众号id,
+'mch_id'     => 商户号,
+'time_stamp' => 时间戳,
+'nonce_str'  => 随机数,
+'product_id' => 商品id,
+'sign'       => 签名
+
+统一下单必须传参数
+'appid' => 公众号Id
+'mch_id' => 商户id
+'nonce_str' => 随机字符串
+'body' => 商品描述
+'out_trade_no' => 商户订单号	
+'total_fee'        => 总价
+'spbill_create_ip' => 客户端ip
+'notify_url' => 支付通知url,
+'trade_type' => 支付类型，
+'product_id' => 产品id/订单号
+
+3.2 输出参数 回调时需返回的参数
+'return_code'  => 返回状态码
+'appid'		   => 开发者id/公众号id
+'mch_id'	   => 商户id
+'nonce_str'    => 随机字符串，
+'prepay_id'    => 预支付id
+'result_code'  => 业务结果
+
+支付通知时需要返回的参数
+'return_code'    =>   'SUCCESS'
+'return_msg'     =>   'OK'
+
+微信内H5调起支付参数
+"appId"       =>   公众号名称，由商户传入     
+"timeStamp"   =>   时间戳，自1970年以来的秒数     
+"nonceStr"    =>   随机串     
+"package"     =>   "prepay_id=预支付id",     
+"signType"    =>   微信签名方式(MD5)     
+"paySign"     =>   微信签名 
+
+
+
+
+
+
